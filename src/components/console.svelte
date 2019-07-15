@@ -41,7 +41,7 @@
         event.currentTarget.value = "";
         document.getElementById("command-output").innerHTML = "";
         window.open(
-          "https://drive.google.com/file/d/1c4bVieTu0NwG8Rz0SCK8VO4awtDudxLw/view?usp=sharing",
+          "https://drive.google.com/file/d/1WVZrES8Ia_34K-xSOrt9g6sf8Kx_tzlp/view?usp=sharing",
           "_blank"
         );
       } else if (val === "Email" || val === "email") {
