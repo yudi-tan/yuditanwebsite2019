@@ -15,5 +15,6 @@ RUN npm ci --only=production
 # Bundle app source
 COPY . .
 
-EXPOSE 3000
-CMD [ "sapper", "start" ]
+ENV PORT=8080
+EXPOSE 8080
+CMD ["node", "__sapper__/build" ]
