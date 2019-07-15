@@ -14,7 +14,6 @@
       }, interval);
     } else {
       if (callback !== null) {
-        console.log(callback);
         callback();
       }
     }
