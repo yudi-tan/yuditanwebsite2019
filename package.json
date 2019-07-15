@@ -1,6 +1,6 @@
 {
-  "name": "TODO",
-  "description": "TODO",
+  "name": "yuditanwebsite2019",
+  "description": "Yudi's personal website 2019",
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",
