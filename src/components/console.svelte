@@ -71,15 +71,15 @@
   }
 
   #cmds2 {
-    color: #66ff66;
+    color: #6ff66a;
   }
 
   #cmds3 {
-    color: #ff6f69;
+    color: #76d7ea;
   }
 
   #cmds4 {
-    color: #50bfe6;
+    color: #ff6037;
   }
 
   input {
