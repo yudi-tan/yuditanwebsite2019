@@ -2,8 +2,8 @@
   import { onMount } from "svelte";
 
   let welcomeMsg = "";
-  let githubMsg = "GITHUB";
   let notRecognizedMsg = "";
+  let emailMsg = "";
 
   function showText(target, message, state, index, interval, callback) {
     if (index < message.length) {
@@ -31,7 +31,23 @@
       var val = event.currentTarget.value;
       if (val === "Github" || val === "github") {
         event.currentTarget.value = "";
-        document.getElementById("command-output").innerHTML = githubMsg;
+        document.getElementById("command-output").innerHTML = "";
+        window.open("https://github.com/YudiTan", "_blank");
+      } else if (val === "Linkedin" || val === "linkedin") {
+        event.currentTarget.value = "";
+        document.getElementById("command-output").innerHTML = "";
+        window.open("https://www.linkedin.com/in/yuditan/", "_blank");
+      } else if (val === "Resume" || val === "resume") {
+        event.currentTarget.value = "";
+        document.getElementById("command-output").innerHTML = "";
+        window.open(
+          "https://drive.google.com/file/d/1c4bVieTu0NwG8Rz0SCK8VO4awtDudxLw/view?usp=sharing",
+          "_blank"
+        );
+      } else if (val === "Email" || val === "email") {
+        event.currentTarget.value = "";
+        let msg = "Email: yuditan1998 at gmail.com";
+        showText("command-output", msg, emailMsg, 0, 80, inputEnableAndFocus);
       } else {
         document.getElementById("command-input").disabled = true;
         let msg = "zsh: command not found: " + val;
@@ -108,7 +124,7 @@
     <span id="yellow">./yuditan.me</span>
   </p>
   <p class="light" id="welcome-message" />
-  <p class="light">To reach out to me, type the following commands:</p>
+  <p class="light">To reach out to me, try the following commands:</p>
   <ul>
     <li>
       <span id="cmds1">
