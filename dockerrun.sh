@@ -9,9 +9,9 @@ elif [[ $1 = "-k" ]]; then
 #always tag then gcr to deploy to google cloud registry.
 # https://medium.com/martinomburajr/building-a-go-web-app-from-scratch-to-deploying-on-google-cloud-part-6-deploying-our-go-app-on-cb2fe6f68ed2
 elif [[ $1 = "-tag" ]]; then
-    docker tag yuditan/personalsite2019:latest gcr.io/personalsite2019/frontend:latest
+    docker tag yuditan/personalsite2019:latest gcr.io/personalsite2019-246804/frontend:latest
 elif [[ $1 = "-gcr" ]]; then
-    gcloud docker -- push gcr.io/personalsite2019/frontend:latest
+    gcloud docker -- push gcr.io/personalsite2019-246804/frontend:latest
 else
     echo "Please use -b to build, -r flag to run, -k flag to kill container."
 fi
